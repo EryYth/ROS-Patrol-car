@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="map_socket" type="socket_node" name="socket" output="screen"/>
+</launch>

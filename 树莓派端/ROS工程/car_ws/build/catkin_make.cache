@@ -1,0 +1,2 @@
+car_start:map_socket:nav:run_include
+-DCATKIN_DEVEL_PREFIX=/home/yth/ROS/car_ws/devel -DCMAKE_INSTALL_PREFIX=/home/yth/ROS/car_ws/install -G Unix Makefiles

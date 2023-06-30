@@ -1,0 +1,4 @@
+<launch>
+    <include file = "$(find car_start)/launch/start.launch" />
+    <include file = "$(find ydlidar_ros_driver)/launch/lidar_view.launch" />
+</launch>

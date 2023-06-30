@@ -1,0 +1,8 @@
+prefix=/home/yth/ROS/car_ws/install
+
+Name: run_include
+Description: Description of run_include
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

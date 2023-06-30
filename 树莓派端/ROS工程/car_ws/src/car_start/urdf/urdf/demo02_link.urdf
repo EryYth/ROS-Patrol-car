@@ -1,0 +1,30 @@
+<robot name = "mycar">
+    <link name = "base_link">
+        <!-- 可视化标签 -->
+        <visual>
+            <!-- 形状 -->
+            <geometry>
+                <!--  立方体 -->
+                <!-- <box size = "0.3 0.2 0.1" /> -->
+                <!-- 圆柱 -->
+                <!-- <cylinder radius = "0.1" length = "2" /> -->
+                <!-- 球体 -->
+                <!-- <sphere radius = "1" /> -->
+                <!-- 皮肤 -->
+                <mesh filename = "package://urdf01_rviz/meshes/autolabor_mini.stl" />
+            </geometry>
+
+            <!-- 偏移量与倾斜弧度 -->
+            <!-- 
+                xyz 设置机器人模型在 X Y Z 上的偏移量
+                rpy 设置倾斜弧度 X(翻滚) Y(俯仰) Z(偏航)
+             -->
+            <origin xyz = "1 0 0" rpy = "1.57 0 0" />
+
+            <!-- 颜色 -->
+            <material name = "car_color">
+                <color rgba = "0.5 0.5 0.5 0.5" />
+            </material>
+        </visual>
+    </link>
+</robot>

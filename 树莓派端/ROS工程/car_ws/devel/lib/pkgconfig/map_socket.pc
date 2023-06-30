@@ -1,0 +1,8 @@
+prefix=/home/yth/ROS/car_ws/devel
+
+Name: map_socket
+Description: Description of map_socket
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

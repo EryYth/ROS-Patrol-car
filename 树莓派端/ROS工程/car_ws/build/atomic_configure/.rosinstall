@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/yth/ROS/car_ws/devel/setup.sh

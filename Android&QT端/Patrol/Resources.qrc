@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>SUSE_B7-5map.pgm</file>
+        <file>Target_point.png</file>
+        <file>current_point.png</file>
+        <file>83521.jpg</file>
+        <file>go.png</file>
+        <file>left.png</file>
+        <file>right.png</file>
+        <file>stop.png</file>
+        <file>left-R.png</file>
+        <file>right-R.png</file>
+        <file>camera.png</file>
+        <file>mountain.jpg</file>
+        <file>camera.jpeg</file>
+    </qresource>
+</RCC>

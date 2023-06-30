@@ -1,0 +1,21 @@
+<launch>
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_link" args="0.08 0 0 0 0 0 base_footprint base_link" /> -->
+ 	<node pkg="tf2_ros" type="static_transform_publisher" name="base_to_gyro" args="0.08 0 0 0 0 0 base_footprint gyro" />
+    <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="base_to_laser" args="0.14 0 0.11 3.14159 0 0 base_footprint laser" /> -->
+
+    <param name="robot_description" command="$(find xacro)/xacro $(find car_start)/urdf/xacro/Robot.xacro" />
+    <!-- <node pkg="rviz" type="rviz" name="rviz"/> -->
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" output="screen" />
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" output="screen" />
+
+    <node pkg="car_start" type="car_run" name="publish_odom" output="screen">
+
+    <param name="usart_port"         type="string" value="/dev/STM32F4ZG"/>  
+    <param name="baud_data"          type="int"    value="115200"/>
+    <param name="robot_frame_id"     type="string" value="base_footprint"/>
+    <param name="smoother_cmd_vel"   type="string" value="cmd_vel"/>
+    <param name="imu_velocity_z"     type="bool"   value="false"/>
+    <param name="filter_Vx_match"    type="double" value="1.0"/>
+    <param name="filter_Vth_match"   type="double" value="0.76"/>
+	</node>
+</launch>

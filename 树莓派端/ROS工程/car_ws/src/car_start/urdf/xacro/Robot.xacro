@@ -1,0 +1,8 @@
+<!-- 摄像头相关的 xacro 文件 -->
+<!-- 组合小车底盘与摄像头与雷达 -->
+<robot name="Robot" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:include filename="Robot_base.xacro" />
+    <xacro:include filename="Robot_gyro.xacro" />
+    <xacro:include filename="Robot_camera.xacro" />
+    <xacro:include filename="Robot_laser.xacro" />
+</robot>
